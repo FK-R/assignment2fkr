@@ -52,6 +52,9 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #424242;
+    transition: all 0.3s ease;
+    
+
    
 }
 
@@ -86,7 +89,8 @@ border: none;
 
 .headDown img{
 
-width: 1000px;
+    width: 80%;
+height: auto;
 border-radius: 8px;
 margin-bottom: 40px;
 }
@@ -101,13 +105,7 @@ margin-bottom: 40px;
 
 
 
-.gridImage{
 
-    display: flex;
-  
-  flex-direction: column;
- 
-}
 
 .gridImage img{
     width: 280px;
@@ -214,7 +212,8 @@ line-height: 70px;
 color: white;
   }
   .relative img{
-    width: 700px;
+    width: 100%;
+    height: auto;
    
   }
   .absolute {
@@ -342,8 +341,212 @@ text-align: center;
 /* Dark 02 */
 
 color: #424242;
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+ nav h3{
+    text-align: center;
+    font-size: 35px;
+ }
+
+ .nav{
+   display: inline;
+   
+}
+.nav ul{
+    display: inline-block;
+    
+}
+
+.nav ul li a:hover{
+    border-bottom:1px solid black ;
+    padding: 3px;
+
+   
+
+}
+
+.headDown h1{
+  
+font-size: 35px;
+
+}
+.headDown p br{
+display: none;
+
+}
+.headDown p{
+    font-size: 12px;
+    padding:10px 10px;
+    
+}
+
+.button-prime{
+width: 120px;
+height: 62px;
+margin-top: 4px;
+font-size: 14px;
+
+}
+
+
+.section1{
+    display:block;
+}
+
+.gridImage img{
+    
+    width: 180px;
+    height: 130px;
+ 
+
+}
+.grid-side{
+    text-align: center;
+}
+
+
+.mainly{
+    display: inline;
+  
+}
+
+.mainly .box{
+
+    margin: 20px 20px;
+    text-align: center;
+
+
+}
+
+.box{
+    width: 350px;
+height: 161px;
+
+margin-bottom: 50px;
+
+}
+.mainly h3{
+    margin-top: -70px;
+    font-size: 35px;
+}
+.mainly p br{
+   display: none;
+}
+.mainly p{
+    text-align: left;
+    font-size: 12px;
+
+}
+
+.box h4{
+   font-size: 16px;
+
+}
+.box p {
+    text-align: center;
+    font-size: 12px;
 }
   
+.absolute{
+    text-align: center;
+    width:100%;
+    z-index: 10000;
+    right: 0px;
+    top: 520px;
+
+
+}
+.relative{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.facts{
+    text-align: left;
+    margin: 5px 5px;
+    
+  }
+.facts h4{
+ 
+font-size: 35px;
+
+
+  }
+  .facts p{
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .icon{
+    display:grid;
+    text-align: center;
+   
+  }
+  .ic{
+    margin-bottom: 40px;
+    width: 200px;
+    padding: 25px;
+
+  }
+
+  .spons h3{
+    margin-top: -70px;
+
+  }
+  .ic2{
+    display: grid;
+align-items: center;
+justify-content: center;
+  }
+  .ic2 img{
+
+    
+    padding: 25px;
+
+  }
+  .foot p{
+     
+font-size: 15px;
+padding: 20px;
+
+
+
+}
+
+@media (min-width: 576px) { 
+  /* Update styles for small devices here */
+ *{ background-color: red;
+}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  /* Update styles for medium devices here */
+  *{ background-color: rgb(145, 255, 0);
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  /* Update styles for large devices here */
+  *{ background-color: rgb(0, 255, 85);
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* Update styles for extra large devices here */
+  *{ background-color: rgb(17, 0, 255);
+}
+}
+In the above example, the styles within each media query will only apply to devices that have a screen width of at least the specified value. This
+
+
+
 </style>
 <body>
 
@@ -371,7 +574,7 @@ color: #424242;
                 </h1>
                 <p>The name of our country is Bangladesh. It's became independent in 1971 after a significant great liberation war. <br> Bangladesh is very beautiful.It has many historical and tourist places.</p>
             <Button class="button-prime">Explore More</Button><br>
-            <img src="./images/banner.jpg" alt="banner"/>
+            <img src="banner.png" alt="banner"/>
 
 
 
@@ -382,13 +585,19 @@ color: #424242;
 <div class="section1">
 
     <div class="gridImage">
-       <div class="grid1"><img src="./images/builder-construction-vest-orange-helmet-standing-safety-specialist-engineer-industry-architecture-manager-occupation-businessman-job-concept.jpg" alt="">
-        <img src="./images/builder-construction-vest-orange-helmet-standing-safety-specialist-engineer-industry-architecture-manager-occupation-businessman-job-concept.jpg" alt="">
-       </div> 
+       <div class="grid1">
+        
+    <img src="ok.jpg" alt="a man">
+           
+    <img src="ok.jpg" alt="a man">
+    </div> 
 
 
-    <div class="grid2"><img src="./images/builder-construction-vest-orange-helmet-standing-safety-specialist-engineer-industry-architecture-manager-occupation-businessman-job-concept.jpg" alt="">
-   <img src="./images/builder-construction-vest-orange-helmet-standing-safety-specialist-engineer-industry-architecture-manager-occupation-businessman-job-concept.jpg" alt="">
+    <div class="grid2">
+        
+        <img src="ok.jpg" alt="a man">
+           
+    <img src="ok.jpg" alt="a man">
     </div>
 
     </div>
@@ -446,7 +655,7 @@ color: #424242;
 
 
 
-    <div class="relative"><img src="./images/architect.png" alt="">
+    <div class="relative"><img src="architect.png" alt="">
         <div class="absolute"><button><span>10+ year</span> <br> Experience</button>
         </div>
       </div>
@@ -465,10 +674,10 @@ color: #424242;
   <div class="icon">
 
 
-        <div class="ic"><img src="./images/icons/ribon.png" alt=""><h3>54</h3><p>Award Winnnings</p></div>
-        <div class="ic"><img src="./images/icons/projects.png" alt=""><h3>1458</h3><p>Project Finished</p></div>
-        <div class="ic"><img src="./images/icons/customers.png" alt=""><h3>590</h3><p>CLient Worked</p></div>
-        <div class="ic"><img src="./images/icons/email.png" alt=""><h3>2200</h3> <p>Email Send</p></div>
+        <div class="ic"><img src="ribon.png" alt=""><h3>54</h3><p>Award Winnnings</p></div>
+        <div class="ic"><img src="projects.png" alt=""><h3>1458</h3><p>Project Finished</p></div>
+        <div class="ic"><img src="customers.png" alt=""><h3>590</h3><p>CLient Worked</p></div>
+        <div class="ic"><img src="email.png" alt=""><h3>2200</h3> <p>Email Send</p></div>
 
     </div>
 
@@ -483,11 +692,11 @@ color: #424242;
 <div class="spons"><h3>Our Sponsors</h3><p>There are many variations of passages of Lorem Ipsum available, but <br> majority have suffered alteration.</p></div>
     
 <div class="ic2">
-<img src="./images/sponsors/spotify.png" alt="">
-<img src="./images/sponsors/amazon.png" alt="">
-<img src="./images/sponsors/figma.png" alt="">
-<img src="./images/sponsors/telerama.png" alt="">
-<img src="./images/sponsors/google.png" alt="">
+<img src="spotify.png" alt="">
+<img src="amazon.png" alt="">
+<img src="figma.png" alt="">
+<img src="telerama.png" alt="">
+<img src="google.png" alt="">
 </div>
 </section>
     </main>
